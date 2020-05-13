@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="views.ListerProfesseurController">
+   <children>
+      <Label layoutX="26.0" layoutY="14.0" />
+      <Label layoutX="140.0" layoutY="46.0" lineSpacing="2.0" text="Numero" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="223.0" layoutY="46.0" />
+      <Button layoutX="403.0" layoutY="46.0" mnemonicParsing="false" text="OK" />
+      <Label layoutX="76.0" layoutY="118.0" lineSpacing="2.0" text="Professeur" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="391.0" layoutY="118.0" lineSpacing="2.0" text="Année" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="461.0" layoutY="118.0" prefHeight="25.0" prefWidth="101.0" />
+      <TableView layoutX="27.0" layoutY="162.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn prefWidth="98.33331298828125" text="Nom" />
+          <TableColumn prefWidth="100.0" text="Prenom" />
+        </columns>
+      </TableView>
+      <TableView layoutX="429.0" layoutY="162.0" prefHeight="200.0" prefWidth="149.0">
+        <columns>
+          <TableColumn prefWidth="148.0" text="Classes" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
